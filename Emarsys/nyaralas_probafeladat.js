@@ -1,9 +1,6 @@
 'use strict';
 
-var targets1 = [['u', 0], ['v', 0], ['w', 0], ['x', 0], ['y', 0], ['z', 0]];
-var targets2 = [['u', 0], ['v', 'w'], ['w', 'z'], ['x', 'u'], ['y', 'v'], ['z', 'u']];
-var targets3 = [['u', 0], ['v', 'w'], ['w', 0], ['x', 'y'], ['y', 'z'], ['z', 'x']];
-var targets4 = [['u', 'a'], ['v', 'w'], ['w', 'z'], ['x', 'u'], ['y', 'v'], ['z', 'u']];
+var targetsAndDependencies = [['u', 0], ['v', 0], ['w', 0], ['x', 0], ['y', 0], ['z', 0]];
 
 function routeOptimum(inputTargets) {
 
@@ -59,9 +56,6 @@ function routeOptimum(inputTargets) {
   return result;
 }
 
-console.log(routeOptimum(targets1));
-console.log(routeOptimum(targets2));
-console.log(routeOptimum(targets3));
-console.log(routeOptimum(targets4));
+console.log(routeOptimum(targetsAndDependencies));
 
 module.exports = routeOptimum;
