@@ -8,7 +8,7 @@ test('testing test', function (t) {
   t.end();
 });
 
-test('routeOptimum', function (t) {
-  t.equal(routeOptimum([['x', 0], ['y', 0], ['z', 0], ['u', 0], ['v', 0], ['w', 0]]), 'xyzuvw');
+test('routeOptimum basic test of basic function', function (t) {
+  t.deepEqual(routeOptimum([['u', 0], ['v', 0], ['w', 0], ['x', 0], ['y', 0], ['z', 0]]), [ 'u', 'v', 'w', 'x', 'y', 'z' ]);
   t.end();
 });
