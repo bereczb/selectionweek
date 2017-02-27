@@ -1,0 +1,11 @@
+{
+  "name": "emarsys-probafeladat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nyaralas_probafeladat.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
